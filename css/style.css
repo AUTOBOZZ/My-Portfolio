@@ -61,7 +61,7 @@ body{
 
 
 #nme{
-  width: max-content;
+  max-width: 100%;
   color: #050d10;
   -webkit-text-stroke: 1px white;
 }
