@@ -80,7 +80,7 @@ body{
   @media only screen and (max-width:1130px){
     font-size: 3rem;
 }
-@media only screen and (max-width:993px){
+@media only screen and (max-width:994px){
   font-size: 70px;
   padding-left:5px;
  
@@ -95,39 +95,39 @@ body{
   padding-left:35px;
  
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
   font-size: 7vh;
  
 }
-@media only screen and (max-width:575px){
+@media only screen and (max-width:576px){
   font-size: 6.4vh;
  
 }
-@media only screen and (max-width:550px){
+@media only screen and (max-width:551px){
   font-size: 6vh;
  
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:501px){
   font-size: 5.5vh;
  
 }
-@media only screen and (max-width:460px){
+@media only screen and (max-width:461px){
   font-size: 5vh;
   margin-left:0;
  
 }
-@media only screen and (max-width:430px){
+@media only screen and (max-width:431px){
   font-size: 4.5vh;
   margin-left:0;
  
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:401px){
   font-size: 4vh;
   margin-left:0;
 
  
 }
-@media only screen and (max-width:350px){
+@media only screen and (max-width:351px){
   font-size: 3.5vh;
   margin-left:0;
   align-items: center;
