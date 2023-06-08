@@ -59,7 +59,7 @@ function ValidateMessage(){
         return false;
         }
         if( minus > 0){
-            messageError.innerHTML = minus + ' ' 'Charectors required'
+            messageError.innerHTML = minus + ' Charectors required'
             return false;
         }
         
