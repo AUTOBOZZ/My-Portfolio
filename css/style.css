@@ -64,26 +64,20 @@ body{
   max-width: 100%;
   color: #050d10;
   -webkit-text-stroke: 1px white;
+  transition: ease-out 600ms;
 }
-
-
-
-
-
-
-
-
-
 
 
 #nme:hover{
   color: #ffffff;
+  transition: 1000ms;
 
   
   }
 
   #mypic{
     border: 15px solid rgba(0, 0, 255, 0.218);
+    transition: ease-out 600ms;
   }
 
   #mypic:hover{
