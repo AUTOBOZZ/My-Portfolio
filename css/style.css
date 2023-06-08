@@ -60,7 +60,6 @@ body{
 
 
 #nme{
-  width: max-content;
   color: #050d10;
   -webkit-text-stroke: 1px white;
   transition: ease-out 600ms;
