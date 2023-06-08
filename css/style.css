@@ -56,17 +56,15 @@ body{
 
 #home{
   background-color: #000;
- 
 }
 
 
 #nme{
-  max-width: 100%;
+  width: max-content;
   color: #050d10;
   -webkit-text-stroke: 1px white;
   transition: ease-out 600ms;
 }
-
 
 #nme:hover{
   color: #ffffff;
@@ -78,38 +76,22 @@ body{
   #mypic{
     border: 15px solid rgba(0, 0, 255, 0.218);
     transition: ease-out 600ms;
+    
   }
 
   #mypic:hover{
     border: 0px solid rgba(0, 0, 255, 0.218);
     transition: 800ms;
-   
-   
+    
     }
 
 nav{
   background-color: #000000;
 }
 
-/* #nno a{
-  color: #ffffff;
-} */
-
-/* #nno a:hover{
-  color: #0BCEAF;
-} */
-
 #nno a.btn:active{
   color: blue;
 }
-
-
-/* #qualification i{
-  color: #009dff;
-} */
-
-
-
 
 #education h5{
   color: #0522ff;
@@ -122,11 +104,9 @@ nav{
 #education small{
   color: #8d8d8d;
 }
-
-
-
-
-
+#wrng{
+  color: red;
+}
 #about h6{
   color: #f700ffe6;
 }
@@ -136,11 +116,7 @@ nav{
   
 }
 
-#about span:hover{
-  /* border-bottom: 2px solid#f700ff; */
-  /* color: #0004ff; */
-  /* color: linear-gradient(rgba(238, 15, 15, 0.7)),rgba(59, 200, 12, 0.7); */
-}
+
 
 
 #about p{
