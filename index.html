@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>PULLINGAL SOORATH</title>
     
+    
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Welcome To My Website" name="keywords">
     <meta content="Welcome To My Website" name="description">
@@ -83,7 +84,7 @@
                     <h1 class="typed-text-output d-inline display-6 font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Flutter Developer, Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://drive.google.com/file/d/1AbtlD-bTK__MKkCTke7h_j4P91x4Mtuv/view?usp=sharing" class="btn btn-outline-light">Download CV</a>
+                        <a href="https://docs.google.com/document/d/1cxZQRInhHLX_GRhs-b3mGg_JIFzl75J0CNx1dwKMRGo/edit?usp=sharing" class="btn btn-outline-light">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -455,25 +456,34 @@
                         <form id="submit-form" action="" onsubmit="sentEmail(); reset(); return false">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <div id="wrng" class="text-start ps-4 pb-2"><span id="name-error"></span></div>
-                                    <input class="form-control rounded-3 mb-3 p-4" type="text" id="name" name="Name" placeholder="Your Name"  onkeyup="ValidateName()" >
+                                    <div class="d-flex flex-row-reverse">
+                                        <div class="p-2" id="name-error"></div>
+                                    </div>
+                                    <input class="form-control bg-black text-light btn-outline-warning rounded-3 mb-3 p-4" type="text" id="name" name="Name" placeholder="Your Name"  onkeyup="ValidateName()" >
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <div id="wrng" class="text-start ps-4 pb-2"><span id="phone-error"></span></div>
-                                    <input class="form-control rounded-3 mb-3 p-4" type="text" id="phone" name="Phone" placeholder="Your Phone No:" onkeyup="ValidatePhone()">
+                                    <div class="d-flex flex-row-reverse">
+                                        <div class="p-2" id="phone-error"></div>
+                                    </div>
+                                    <input class="form-control bg-black text-light btn-outline-warning rounded-3 mb-3 p-4" type="number" id="phone" name="Phone" placeholder="Your Phone No:" onkeyup="ValidatePhone()">
                                 </div>
                             </div>
                             <div class="control-group">
-                                <div id="wrng" class="text-start ps-4 pb-2"><span id="email-error"></span></div>
-                                <input class="form-control rounded-3 mb-3 p-4" type="email" id="email" name="Email" placeholder="Your Email" onkeyup="ValidateEmail()">
+                                <div class="d-flex flex-row-reverse">
+                                    <div class="p-2" id="email-error"></div>
+                                </div>
+                                <input class="form-control bg-black text-light btn-outline-warning rounded-3 mb-3 p-4" type="email" id="email" name="Email" placeholder="Your Email" onkeyup="ValidateEmail()">
                             </div>
                             <div class="control-group">
-                                <div id="wrng" class="text-start ps-4 pb-2"><span id="message-error"></span></div>
-                                <textarea class="form-control rounded-3 mb-3 py-3 px-4" name="Message" id="message" cols="50" rows="5" placeholder="Your Text Here..." onkeyup="ValidateMessage()"></textarea>
+                                <div class="d-flex flex-row-reverse">
+                                    <div class="p-2" id="message-error"></div>
+                                </div>
+                                <textarea class="form-control bg-black text-light btn-outline-warning rounded-3 mb-3 py-3 px-4" name="Message" id="message" cols="50" rows="5" placeholder="Your Text Here..." onkeyup="ValidateMessage()"></textarea>
                             </div>
                             <div>
-                                <button style="font-weight: bold; border: 1px solid #d0ff00;" class="btn py-2 px-3 rounded-3" type="submit" id="sendMessageButton">Send
+                                <button style="font-weight: bold; border: 1px solid #d0ff00;" class="btn py-2 px-3 rounded-3" type="submit" id="sendMessageButton" onclick="return ValidateForm()" >Send
                                     Message</button>
+                                    <div id="submit-error" ></div>
                             </div>
                         </form>
                     </div>
@@ -519,7 +529,7 @@
                 method:"post",
                 success:function (response){
                     // alert("Form submitted successfully")
-                    window.location.reload()
+                    window.location.reload ()
                     window.location.href="hai.html"
                 },
                 error:function (err){
