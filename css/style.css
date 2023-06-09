@@ -65,6 +65,12 @@ body{
   transition: ease-out 600ms;
 }
 
+
+
+
+
+
+
 #nme:hover{
   color: #ffffff;
   transition: 1000ms;
@@ -103,9 +109,42 @@ nav{
 #education small{
   color: #8d8d8d;
 }
-#wrng{
+
+
+#name-error, #phone-error , #email-error , #message-error , #submit-error{
   color: red;
+  position: absolute;
+  font-size: 12px;
 }
+
+#contact input {
+  border: 0.1px solid #d0ff00;
+}
+
+#contact textarea {
+  border: 0.1px solid #d0ff00;
+}
+
+
+
+
+
+form i{
+  font-size: 20px;
+  color: #d0ff00;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+}
+
+
+
+
+
+
 #about h6{
   color: #f700ffe6;
 }
