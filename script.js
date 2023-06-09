@@ -2,6 +2,7 @@ var nameError = document.getElementById('name-error');
 var emailError = document.getElementById('email-error');
 var phoneError = document.getElementById('phone-error');
 var messageError = document.getElementById('message-error');
+var submitError = document.getElementById('submit-error');
 
 
 function ValidateName(){
@@ -9,14 +10,18 @@ function ValidateName(){
     var name = document.getElementById('name').value;
 
     if(name.length == 0){
-        nameError.innerHTML = 'Name is required';
+        nameError.innerHTML = '*Name is required';
         return false;
     }
-    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+    if(name.length < 3){
+        nameError.innerHTML = '*At least 3 characters';
+        return false;
+    }
+    if(!name.match(/^[A-Za-z]*[A-Za-z]*(\s{1,}[A-Za-z]*)*$/)){
         nameError.innerHTML = 'Enter full name';
         return false;
     }
-        nameError.innerHTML = '<i class="text-success bi bi-check-lg"></i>';
+        nameError.innerHTML = '<i class=" bi bi-check-lg"></i>';
         return true;
 
 }
@@ -24,28 +29,28 @@ function ValidateName(){
 function ValidateEmail(){
     var email = document.getElementById('email').value;
     if(email.length == 0){
-        emailError.innerHTML = 'Email is required';
+        emailError.innerHTML = '*Email is required';
         return false;
         }
         if(!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
             emailError.innerHTML = 'Invalid email';
             return false;
             }
-            emailError.innerHTML = '<i class="text-success bi bi-check-lg"></i>';
+            emailError.innerHTML = '<i class="bi bi-check-lg"></i>';
             return true;
 }
 
 function ValidatePhone(){
     var phone = document.getElementById('phone').value;
     if(phone.length == 0){
-        phoneError.innerHTML = 'Phone is required';
+        phoneError.innerHTML = '*Phone is required';
         return false;
         }
     if(!phone.match(/^[0-9]{10}$/)){
         phoneError.innerHTML = 'Enter 10 digit phone number';
         return false;
         }
-    phoneError.innerHTML = '<i class="text-success bi bi-check-lg"></i>';
+    phoneError.innerHTML = '<i class="bi bi-check-lg"></i>';
     return true;
 }
 
@@ -55,7 +60,7 @@ function ValidateMessage(){
     var minus = required - message.length;
 
         if(message.length == 0){
-        messageError.innerHTML = 'Message is required';
+        messageError.innerHTML = '*Message is required';
         return false;
         }
         if( minus > 0){
@@ -63,8 +68,19 @@ function ValidateMessage(){
             return false;
         }
         
-        messageError.innerHTML = '<i class="text-success bi bi-check-lg"></i>' ;
+        messageError.innerHTML = '<i class="bi bi-check-lg"></i>' ;
         return true;
 
        
 }
+
+
+function ValidateForm(){
+
+    if(!ValidateName() || !ValidateEmail() || !ValidatePhone() || !ValidateMessage()){
+        submitError.innerHTML = '*please fix all above'
+        setTimeout(function(){submitError.style.display = 'none';}, 3000)
+        return false;
+    }
+}
+
