@@ -451,33 +451,33 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
-                        <div id="success"></div>
+                        <!-- <div id="success"></div> -->
                         <form id="submit-form" action="" onsubmit="sentEmail(); reset(); return false">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <div class="d-flex flex-row-reverse">
                                         <div class="p-2" id="name-error"></div>
                                     </div>
-                                    <input class="form-control bg-black text-light btn-outline-warning rounded-3 mb-3 p-4" type="text" id="name" name="Name" placeholder="Your Name"  onkeyup="ValidateName()" >
+                                    <input style="border:none; background-color: #141900;" class="form-control text-light rounded-3 mb-3 p-4" type="text" id="name" name="Name" placeholder="Your Name" onkeyup="ValidateName()" >
                                 </div>
                                 <div class="control-group col-sm-6">
                                     <div class="d-flex flex-row-reverse">
                                         <div class="p-2" id="phone-error"></div>
                                     </div>
-                                    <input class="form-control bg-black text-light btn-outline-warning rounded-3 mb-3 p-4" type="number" id="phone" name="Phone" placeholder="Your Phone No:" onkeyup="ValidatePhone()">
+                                    <input style="border:none; background-color: #141900;" class="form-control text-light rounded-3 mb-3 p-4" type="number" id="phone" name="Phone" placeholder="Your Phone No:" onkeyup="ValidatePhone()">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="d-flex flex-row-reverse">
                                     <div class="p-2" id="email-error"></div>
                                 </div>
-                                <input class="form-control bg-black text-light btn-outline-warning rounded-3 mb-3 p-4" type="email" id="email" name="Email" placeholder="Your Email" onkeyup="ValidateEmail()">
+                                <input style="border:none; background-color: #141900;" class="form-control text-light rounded-3 mb-3 p-4" type="email" id="email" name="Email" placeholder="Your Email" onkeyup="ValidateEmail()">
                             </div>
                             <div class="control-group">
                                 <div class="d-flex flex-row-reverse">
                                     <div class="p-2" id="message-error"></div>
                                 </div>
-                                <textarea class="form-control bg-black text-light btn-outline-warning rounded-3 mb-3 py-3 px-4" name="Message" id="message" cols="50" rows="5" placeholder="Your Text Here..." onkeyup="ValidateMessage()"></textarea>
+                                <textarea style="border:none; background-color: #141900;" class="form-control text-light rounded-3 mb-3 py-3 px-4" name="Message" id="message" cols="50" rows="5" placeholder="Your Text Here..." onkeyup="ValidateMessage()"></textarea>
                             </div>
                             <div>
                                 <button style="font-weight: bold; border: 1px solid #d0ff00;" class="btn py-2 px-3 rounded-3" type="submit" id="sendMessageButton" onclick="return ValidateForm()" >Send
